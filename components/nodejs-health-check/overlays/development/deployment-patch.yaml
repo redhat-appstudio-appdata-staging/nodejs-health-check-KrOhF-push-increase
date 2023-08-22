@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/flacatus-tenant/nodejs-health-check/nodejs-health-check@sha256:4262ae024f1eec898448007f78a4a46685450368d8721bc9319d90040e370732
+        name: my-nodejs
+        resources: {}
+status: {}
